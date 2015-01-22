@@ -1,5 +1,5 @@
 // get the root directory of the magento installation.
-root = jQuery(".logo a").attr('href');
+root = jQuery("a.logo").attr('href');
 
 // Check if the current page is a product, category, or something else.
 if(jQuery("body").hasClass("catalog-product-view")){ // is product page
