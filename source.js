@@ -2,7 +2,7 @@
 if(jQuery("body").hasClass("catalog-product-view")){ // is product page
 
 	// Get the product id from a field on the page that contains it.
-	id = jQuery(".no-display input").val()
+	id = jQuery(".no-display input").val();
 
 	// Openthe magento edit product page in a new tab.
 	window.open("http://www.gooutdoorsaustralia.com.au/shop/index.php/admin/catalog_product/edit/id/"+id,"_blank");
@@ -11,7 +11,7 @@ if(jQuery("body").hasClass("catalog-product-view")){ // is product page
 
 	// alert the user that the current page isnt supported
 	alert("Edit Category is not supported yet!");
-	
+
 }else{ // is something else
 
 	// alert the user that the current page isnt supported
