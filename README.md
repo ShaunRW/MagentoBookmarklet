@@ -13,7 +13,6 @@ Open the Magento Backend product edit page from the products page on the fronten
 ```javascript
 javascript:root=jQuery("a.logo").attr('href');if(jQuery("body").hasClass("catalog-product-view")){id=jQuery(".no-display input").val();window.open(root+"index.php/admin/catalog_product/edit/id/"+id,"_blank");}else if(jQuery("body").hasClass("catalog-category-view")){alert("Edit Category is not supported yet!");}else{alert("This page is not supported yet!");}
 ```
-4. That's it you're done.
 
 ### Usage:
  - Click the bookmarklet while on the product page of your Magento webstore, this will open the products edit page in a new tab.
