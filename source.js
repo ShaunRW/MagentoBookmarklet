@@ -1,3 +1,6 @@
+// get the root directory of the magento installation.
+root = jQuery(".logo a").attr('href');
+
 // Check if the current page is a product, category, or something else.
 if(jQuery("body").hasClass("catalog-product-view")){ // is product page
 
@@ -5,7 +8,7 @@ if(jQuery("body").hasClass("catalog-product-view")){ // is product page
 	id = jQuery(".no-display input").val();
 
 	// Openthe magento edit product page in a new tab.
-	window.open("http://www.gooutdoorsaustralia.com.au/shop/index.php/admin/catalog_product/edit/id/"+id,"_blank");
+	window.open(root+"index.php/admin/catalog_product/edit/id/"+id,"_blank");
 
 }else if(jQuery("body").hasClass("catalog-category-view")){ // is category
 
